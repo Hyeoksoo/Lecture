@@ -1,0 +1,22 @@
+Poppins
+spoca han sans
+nunito
+Noto Sans KR
+
+
+
+
+/*
+#ff4949 red
+#ff5216 orange
+#ffc82c YELLOW
+#13ce66 GREEN
+#1fb6ff BLUE
+#7e5bef PURPLE
+#ff49db PINK
+*/
+
+
+
+
+https://www.figma.com/file/k6aekBk53MUKUwVqRHsSVx/Bugless-CSS?node-id=368%3A0

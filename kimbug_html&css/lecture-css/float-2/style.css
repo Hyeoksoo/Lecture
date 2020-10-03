@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+	height:100vh;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  letter-spacing: -0.02em;
+	background-color:black;
+}
+
+h1 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1f2d3d;
+  line-height: 1.25;
+}
+
+strong {
+  font-size: 14px;
+  font-weight: 400;
+  color: #afb3b9;
+  line-height: 1.4285714286;
+}
+
+p {
+  font-size: 16px;
+  color: #79818b;
+  line-height: 1.5;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+.card{
+	background-color:#fff;
+	padding:20px;
+	max-width:540px;
+}
+
+.clearfix::after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.card-user{
+	border-radius:50%;
+	width:44px;
+	height:44px;
+	margin-right:20px;
+}
+
+.card-user,
+.card-content{
+	float:left;
+}
+
+
+
+.card-content{
+	
+}
+
+.card-content h1{
+	
+	margin-bottom:4px;
+}
+
+.card-content strong{
+	display:inline-block;
+	margin-bottom:12px;
+	
+}
+
+.card-content p{
+	
+}

@@ -1,0 +1,59 @@
+.friend {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  width: 50px;
+  border-radius: 38%;
+}
+
+.friend__avatar.g-avatar {
+  width: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+}
+
+.friend .friend__column {
+  display: flex;
+  align-items: center;
+}
+
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+
+.friend__content .friend__name {
+  /* bottom-text를 밑으로 내려준다 display가 inline으로 정렬돼있기 때문*/
+  display: block;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__bottom-text, 
+.friend__content .friend__status 
+.friend .chat__timestamp{
+  opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status, 
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+
+.friend__add-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 10px;
+  border-radius: 4px;
+}

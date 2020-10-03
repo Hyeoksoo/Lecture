@@ -1,0 +1,70 @@
+  
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+	height:100vh;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.02em;
+	background-color:black;
+}
+
+a {
+  font-size: 18px;
+  line-height: 20px;
+  color: #8492a6;
+  text-decoration: none;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+ul{
+	list-style-type:none;
+	padding-left:0;
+}
+
+/*  float로 인한 자식요소를 찾지못해 붕떠있는걸 막아줌
+		난 자식이 없구나 하고 영역이 0으로 줄어들었음
+.tab-menu{
+	overflow:hidden;
+}
+ */
+	
+.tab-menu{
+	
+	max-width:540px;
+	border-bottom:1px solid #E5EAEF;
+	background-color:#fff;
+}
+
+/* 가상 요소(::after)을 만들어서 마지막 자식을 만들어서 clear:left 속성을 줌
+		피해야 하는 float가 left이기 때문에 left를 준다
+		content 속성 필수
+		clear를 사용하려면 반드시 display가 block이 되어야함*/
+.tab-menu::after{
+	content: '';
+	display:block;
+	clear:left;
+}
+
+.tab-menu-item{
+	float:left;
+	margin-right:16px;
+	
+}
+
+/* 앵커에 패딩을 줘야 클릭하기 편하다
+		아뿔싸 a태그가 inline으로 돼있네
+		inline에는 top bottom에 마진 패딩을 줄 수 없으니
+		수정 필요*/
+.tab-menu-item a{
+	display:inline-block;
+	padding:16px 20px;
+}
+
+.tab-menu-item.selected a{
+	color:#2860E1;
+	font-weight:500;
+	border-bottom:2px solid #2860E1;
+}

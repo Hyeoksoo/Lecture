@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>자스스톤</title>
+  <style>
+    
+    
+    #rival-deck,
+    #rival-hero,
+    #rival-cards,
+    #my-cards,
+    #my-deck,
+    #my-hero {
+      text-align: center;
+      
+    }
+
+    #rival {
+      vertical-align: bottom;
+    }
+
+    #my,
+    #rival {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 50px;
+    }
+
+
+    #rival-deck {
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+      background-color: gray;
+    }
+
+    #my-deck {
+      display: inline-block;
+      vertical-align: bottom;
+      width: 300px;
+      
+      background-color: gray;
+    }
+    .turn{
+      background-color: rgb(233, 151, 151);
+    }
+    
+    .card {
+      width: 80px;
+      height: 140px;
+      display: inline-block;
+      position: relative;
+      border: 1px solid black;
+      margin-bottom: 10px;
+      background-color: white;
+    }
+
+    .card-name {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .card-atk,
+    .card-hp,
+    .card-cost {
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 22px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      border: 1px solid black;
+    }
+
+    .card-cost {
+      bottom: auto;
+      top: 0;
+      left: 0;
+      background-color: blue;
+      color: white;
+    }
+
+    .card-atk {
+      left: 0;
+      background-color: yellow;
+    }
+
+    .card-hp {
+      right: 0;
+      background-color: red;
+      color: white;
+    }
+    .card-hidden{
+      display: none;
+    }
+    
+    .card-selected{
+      border: 2px solid red;
+    }
+    .card-turnover{
+      background-color: gray;
+    }
+    #turn-btn{
+      float:right;
+      position: relative;
+      top:-23px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="rival">
+    <div>코스트: <span id="rival-cost">10</span>/<span>10</span></div>
+    <div id="rival-hero"></div>
+    <div id="rival-cards" style="height:150px"></div>
+  </div>
+
+  <div id="rival-deck">
+    <div>덱</div>
+  </div>
+  <hr />
+  <button id="turn-btn">턴넘기기</button>
+  <div id="my" class="turn">
+    <div id="my-cards" style="height:150px">
+    </div>
+    <div id="my-hero">
+    </div>
+    <div>코스트: <span id="my-cost">10</span>/<span>10</span></div>
+  </div>
+  <div id="my-deck">
+    <div>덱</div>
+
+  </div>
+
+
+  <div class="card-hidden">
+    <div class="card">
+      <div id ="cost" class="card-cost"></div>
+      <div class="card-atk"></div>
+      <div class="card-hp"></div>
+    </div>
+  </div>
+
+  <script src="자스스톤.js"></script>
+</body>
+
+</html>

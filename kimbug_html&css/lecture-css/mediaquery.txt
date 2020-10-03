@@ -1,0 +1,24 @@
+미디어쿼리는 반응형 웹을 만들기 위해서 반드시 알아야 함.
+
+반응형 웹을 만들기 위해서는 반드시 2가지 요건이 충족되어야 함
+1. viewport meta    => HTML
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		...
+	</head>
+	
+	=> meta데이터를 줄건데 viewport에 관해서 정보를 줄거야 이 웹사이트의 가로사이즈를 잡을 때는 사용자가 사용하고 있는 디바이스에 맞춰달라
+	
+		
+
+
+
+
+2. media query  		=> CSS
+
+	@media screen and (min-width: 768px) and (...){
+		/*   할 일         */
+	}
+	
+	=> 나 media 쿼리 쓸거야 screen에 관해서 이야기를 할건데 
+		 최소 브라우저의 가로 사이즈가 768px이면 (768px 이상이면) 이런 스타일을 먹여줘

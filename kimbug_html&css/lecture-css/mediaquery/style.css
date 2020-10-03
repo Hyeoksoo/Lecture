@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 배경 이미지 삽입 */
+.landing {
+  background-image: url("./assets/img-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/* 배경 타이틀 텍스트 css처리 */
+.landing-title {
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+/* 배경 타이틀 텍스트 css처리 */
+.landing-title strong {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.landing-link {
+  line-height: 1;
+  color: #fff;
+}
+
+.banner-title a {
+  color: #1f2d3d;
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+@media screen and (min-width:1440px) and (min-height:900px){
+	
+	배경이미지를 꽉 못채우겠다 ㄷㄷ
+	
+}

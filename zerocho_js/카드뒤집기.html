@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>카드짝맞추기</title>
+
+  <style>
+    .wrapper{
+      width: 488px;
+      height: 477px;
+    }
+    .card{
+      display: inline-block;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      width:100px;
+      height:140px;
+      
+
+    }
+
+    /*카드 뒤집는 효과*/
+    .card-inner{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    .card.flipped .card-inner{
+      transform: rotateY(180deg);
+
+    }
+    .card-front{
+      background-color: rgb(68, 68, 175);
+    }
+    
+    .card-front, .card-back{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border:1px solid black;
+    }
+    .card-back{
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper"></div>
+  <script src="카드뒤집기.js"></script>
+</body>
+
+</html>

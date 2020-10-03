@@ -1,0 +1,17 @@
+.status-bar{
+  /* 모든  element를 가로정렬*/
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  /* opacity = 불투명도 */
+  /* opacity: 0.7; */
+  color: #656565;
+}
+
+.status-bar i {
+  font-size: 14px;
+}
+
+.status-bar .status-bar__battery-level{
+  margin-left: 5px;
+}

@@ -1,0 +1,81 @@
+flexbox => 정렬의 끝판왕
+
+너무 잘 만들어져있어서 원리이해 필요없이
+잘 사용하는 방법만 익히면 됨.
+
+※ Flexbox를 사용할 때 필요한 4가지 사고과정 ※
+1. 나: Flexbox 쓸거다.
+2. css : 가로정렬이니 세로정렬이니?
+3. css : 무조건 한 줄에 정렬할거니?
+4. 신나는 Flexbox 파티 타임!
+
+==================================
+<1. 나: Flexbox 쓸거다.>
+
+.flexbox{
+	display: flex;            (or lnline-flex)
+	
+}
+
+그래서 선언을 누구한테 해야하나? 
+=> 정렬하고 싶은 요소들을 감싸는 부모에게!
+
+
+
+
+<2. css : 가로정렬이니 세로정렬이니?>
+
+.flexbox{
+	display: flex | lnline-flex;
+	flex-direction: row  | row-reverse | column | column-reverse;
+}
+
+가로방향 row 세로방향 column,
+(주의) flex를 사용하면! 
+=> 우리눈에는 보이지 않는 2개의 Axis(축)이 생김
+=> flex-direction 값이 무엇이냐에 따라서 Axis 방향이 달라진다.
+
+[2개의 Axis] 
+1. Main Axis         
+=> flex-direction 방향에 따라서 생김
+
+2. Cross Axis
+=> Main Axis 와 정확히 수직을 이루는 Axis
+
+Cross Axis 방향은 무조건 위에서 아래, 왼쪽에서 오른쪽
+
+
+
+
+
+
+<3. css : 무조건 한 줄에 정렬할거니?>
+.flexbox{
+	display: flex | lnline-flex;
+	flex-direction: row | row-reverse | column | column-reverse;
+	flex-wrap: nowrap | wrap  
+}
+
+
+flex-wrap 
+=> 한줄안에 모든 요소를 정렬할 것인지 (기본값 nowrap)
+=> nowrap은 감싸지(wrap) 않고 자식의 요소를 줄여서라도 
+   한 줄로 정렬해버림!
+=> wrap은 공간이 넉넉하지 않으면 여러 줄을 만들어버림	 
+
+
+
+
+
+<4. 신나는 Flexbox 파티 타임!>
+
+(정렬하는 방법)
+Main Axis => justify-content
+Cross Axis => align-items, align-content
+
+(꿀팁)
+
+선 align-items  후 align-content
+
+(개쩌는 기능 order)
+요소들에게 order를 주면 순서를 마음대로 바꿀 수 있음
