@@ -2,7 +2,7 @@
 ### installation
 <pre>
 cd /root
-git clone https://github.com/soohyeok8901/Lecture/tree/master/docker_tutorial
+git clone https://github.com/soohyeok8901/Lecture    -> 하위 디렉토리 clone하는 법 적용이 안돼서 수정
 cd docker_tutorial
 </pre>
 ### Run
